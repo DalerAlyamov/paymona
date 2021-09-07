@@ -1,0 +1,63 @@
+@import '../../styles/global'
+
+.root
+  margin-top: 80px
+  margin-bottom: 150px
+
+.container
+  position: relative
+  @include container
+  height: 636px  
+
+.panel_hd
+  position: absolute
+  top: 0
+  left: 0
+
+.perfomance_vector
+  position: absolute
+  right: 100px
+  top: 50px
+  z-index: 10
+
+.content
+  left: 100px
+  top: 80px
+  position: absolute
+  z-index: 10
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+
+.title
+  font-size: 3rem
+  margin-bottom: 70px
+
+.description
+  margin-bottom: 50px
+  line-height: 24px
+  letter-spacing: 0.06rem
+
+.button
+  display: inline-block
+  padding: 18px 34px
+  background: #647789  
+  border-radius: 8px
+  color: #fff
+  transition: 70ms linear
+  &:hover
+    background: darken(#647789, 5%)  
+  &:active
+    background: darken(#647789, 10%)  
+
+.down_btn
+  position: absolute
+  z-index: 10
+  left: 50%
+  bottom: 24px
+  transform: translateX(-50%)
+  background: #fff
+  padding: 63px 38px
+  border-radius: 50px
+  path
+    color: #000
