@@ -17,7 +17,7 @@ const Home = () => {
 
       <Grid />
 
-      <Login />
+      <Login isDark />
       
     </div>
   )

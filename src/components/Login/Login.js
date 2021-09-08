@@ -6,12 +6,15 @@ import GoogleInput from '../GoogleInput/GoogleInput'
 import TextareaAutosize from 'react-textarea-autosize'
 
 const Login = ({
-  className
+  className,
+  isDark=false
 }) => {
   return (
-    <div className={classNames(className, styles.root)} id='contact'>
+    <div className={classNames(className, styles.root, isDark && styles['root--dark'])} id='contact'>
       
-      <img src={rectangle} className={styles.rectangle} alt="" />
+      {!isDark &&
+        <img src={rectangle} className={styles.rectangle} alt="" />
+      }
 
       <Panel />
 
