@@ -23,10 +23,6 @@ const Performance = ({
           <PerfomanceVector />
         </div>
 
-        <button className={styles.down_btn} onClick={() => {}}>
-          <KeyboardDown />
-        </button>
-
       </div>
 
     </div>

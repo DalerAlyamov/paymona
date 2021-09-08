@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
 import styles from './Header.module.sass'
 import { Logo } from '../../icons'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 const Header = ({
-  className,
-  activeLink
+  className
 }) => {
+  
+  const [activeLink, setActiveLink] = useState()
+
+  const history = useHistory()
+
+  useEffect(() => {
+    setActiveLink(history.location.pathname)
+    history.listen(location => setActiveLink(location.pathname))
+  }, [history])
+
   return (
     <div className={classNames(className, styles.root)}>
 

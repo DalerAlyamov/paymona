@@ -12,6 +12,7 @@ import MoreVert from './MoreVert'
 import CheckBox from './CheckBox'
 import CheckBoxOutlineBlank from './CheckBoxOutlineBlank'
 import Close from './Close'
+import KeyboardArrowRight from './KeyboardArrowRight'
 
 export {
   Logo,
@@ -27,5 +28,6 @@ export {
   MoreVert,
   CheckBox,
   CheckBoxOutlineBlank,
-  Close
+  Close,
+  KeyboardArrowRight
 }
