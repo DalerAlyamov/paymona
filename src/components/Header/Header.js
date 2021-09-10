@@ -45,9 +45,6 @@ const Nav = ({
       <Link className={classNames(styles.link, activeLink === '/services' && styles['link--active'])} to='/services'>
         Услуги
       </Link>
-      <Link className={classNames(styles.link, activeLink === '/resolves' && styles['link--active'])} to='/resolves'>
-        Решения
-      </Link>
       <Link className={classNames(styles.link, activeLink === '/about-us' && styles['link--active'])} to='/about-us'>
         О нас
       </Link>
