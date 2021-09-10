@@ -4,6 +4,7 @@ import AboutUs from '../components/AboutUs/AboutUs'
 import Services from '../components/Services/Services'
 import Login from '../components/Login/Login'
 import OurDignity from '../components/OurDignity/OurDignity'
+import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
     <div>
@@ -17,6 +18,8 @@ const Home = () => {
       <OurDignity/>
 
       <Login isDark />
+      
+      <Footer/>
       
     </div>
   )
