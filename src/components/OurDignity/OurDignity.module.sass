@@ -1,0 +1,60 @@
+@import '../../styles/global'
+
+.root
+  width: 100%
+  background: #647789
+  border-radius: 20px
+  padding: 50px 0
+  margin-bottom: 150px
+
+.container
+  @include container
+
+.title
+  color: #EDF1F5
+  font-size: 3rem
+  font-weight: 600
+  letter-spacing: 0.05rem
+
+.blocks
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr
+
+.block
+  padding: 45px
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+
+.block__vector
+  margin-bottom: 15px
+
+.block__title
+  color: #EDF1F5
+  letter-spacing: 0.05rem
+  font-size: 2rem
+
+.block__text
+  color: #EDF1F5
+  font-size: 1rem
+  letter-spacing: 0.05rem
+  max-width: 380px
+  margin-top: 15px
+  line-height: 24px
+
+.block_1
+  border-bottom: 1px dashed #fff
+
+.block_2
+  border-bottom: 1px dashed #fff
+  border-right: 1px dashed #fff
+  border-left: 1px dashed #fff
+
+.block_3
+  border-bottom: 1px dashed #fff
+
+.block_5
+  border-right: 1px dashed #fff
+  border-left: 1px dashed #fff

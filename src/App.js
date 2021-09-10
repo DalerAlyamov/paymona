@@ -6,7 +6,7 @@ import DataManagement from './pages/DataManagement'
 import Services from './pages/Services'
 import BI from './pages/BI'
 import ML from './pages/ML'
-import DataScience from './pages/DataScienceML'
+import DataScience from './pages/DataScience'
 
 const App = () => {
   return (
