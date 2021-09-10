@@ -16,7 +16,7 @@ const Footer = () => {
        </div> 
 
         <div className={styles.AboutCompany}>
-          <Link to='/' className={styles.title}>О компании</Link>
+          <span className={styles.title}>О компании</span>
           <Link to='/' className={styles.servicesItems}>Политика конфиденциальности</Link>
           <Link to='/' className={styles.servicesItems}>Настройка файлов cookie</Link>
           <Link to='/' className={styles.servicesItems}>Работайте с нами</Link>

@@ -7,6 +7,8 @@ import Services from './pages/Services'
 import BI from './pages/BI'
 import ML from './pages/ML'
 import DataScience from './pages/DataScience'
+import About from './pages/About'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -22,6 +24,9 @@ const App = () => {
         <Route path='/bi'>
           <BI />
         </Route>
+        <Route path='/about-us'>
+          <About />
+        </Route>
         <Route path='/data-management'>
           <DataManagement />
         </Route>
@@ -32,6 +37,7 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
+      <Footer/>
     </>
   )
 }
