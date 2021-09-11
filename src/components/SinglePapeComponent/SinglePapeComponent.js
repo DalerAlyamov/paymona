@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import styles from './SinglePapeComponent.module.sass'
 import rectangle from './rectangle.png'
 
-const Single = ({
+const SinglePapeComponent = ({
   className,
   vector,
   title,
@@ -42,4 +42,4 @@ const Single = ({
   )
 }
 
-export default Single
+export default SinglePapeComponent

@@ -57,7 +57,7 @@ const About = () => {
           />
           <Block
             isType
-            title='Frontend'
+            title='Front-end'
             />
           <Block
             img={girl3}
@@ -71,7 +71,7 @@ const About = () => {
           />
           <Block
             isType
-            title='Backend'
+            title='Back-end'
           /> 
           <Block
             img={girl4}

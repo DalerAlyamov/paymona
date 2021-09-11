@@ -3,7 +3,7 @@
 .root
   width: 100vw
   background: #1a1a1a
-  padding-bottom: 40px
+  padding-bottom: 150px
 
 .hr
   width: 100%
@@ -28,6 +28,7 @@
   @include container
   
 .block
+  background: #151515
    
 .bookTitle
   text-align: center
@@ -47,7 +48,7 @@
   overflow: hidden
   &:hover
    .hoverBlock
-     display: flex
+      opacity: 1
 
 .img
   position: absolute
@@ -57,7 +58,8 @@
   object-position: center 
 
 .hoverBlock
-  display: none
+  display: flex
+  opacity: 0
   width: 100%
   height: 100%
   justify-content: flex-end
@@ -66,16 +68,15 @@
   background: #00000075
   padding: 15px
   z-index: 100
+  transition: 300ms ease-in-out
 
 .name
   color: #fff
-  font-size: 22px
+  font-size: 18px
+  font-weight: 600
 
 .position
-  opacity: 0.4
-  color: #fff
+  color: #afafaf
+  font-weight: 600
   font-size: 12px
-
-  
-
-
+      
