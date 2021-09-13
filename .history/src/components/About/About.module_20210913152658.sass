@@ -1,0 +1,83 @@
+@import '../../styles/global'
+
+.root
+  width: 100vw
+  background: #1a1a1a
+  padding-bottom: 150px
+
+.hr
+  width: 100%
+  display: flex
+  justify-content: center
+
+.title
+  font-size: 180px
+  display: flex
+  justify-content: center
+  padding-top: 150px
+  font-weight: 600
+  letter-spacing: 120px
+  color: #151515
+  margin-bottom: 50px
+
+.gridBlocks
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+
+.container
+  @include container
+  
+.block
+  background: #151515
+   
+.bookTitle
+  text-align: center
+  height: 250px
+  width: 100%
+  color: #fff
+  display: flex
+  justify-content: center
+  align-items: center
+
+.wrap
+  position: relative
+  height: 250px
+  display: flex
+  align-items: center 
+  justify-content: center
+  overflow: hidden
+  &:hover
+   .hoverBlock
+      opacity: 1
+
+.img
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  object-position: center 
+
+.hoverBlock
+  display: flex
+  opacity: 0
+  width: 100%
+  height: 100%
+  justify-content: flex-end
+  align-items: flex-start
+  flex-direction: column
+  background: #00000075
+  padding: 15px
+  z-index: 100
+  transition: 300ms ease-in-out
+  object-fit: content
+
+.name
+  color: #fff
+  font-size: 18px
+  font-weight: 600
+
+.position
+  color: #afafaf
+  font-weight: 600
+  font-size: 12px
+      

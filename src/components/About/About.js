@@ -1,13 +1,19 @@
 import React from 'react'
 import styles from './About.module.sass'
-import Diractor from './Director.jpg'
-import Diractor2 from './re.jpg'
-import girl from './girl.jpg'
-import girl3 from './girl3.jpg'
-import girl2 from './girl2.jpg'
-import man from './man.jpg'
-import man2 from './man2.jpg'
-import girl4 from './girl4.jpg'
+import Daler from '../../images/Daler.jpg'
+import Aki_parviz from '../../images/Aki_parviz.jpg'
+import Amin from '../../images/Amin.jpg'
+import amir from '../../images/amir.jpg'
+import Azim from '../../images/Azim.jpg'
+import ikbol from '../../images/ikdol.jpg'
+import sara from '../../images/sara.jpg'
+import kama from '../../images/kama.jpg'
+import jacob from '../../images/jacob.jpg'
+import parviz from '../../images/parviz.jpg'
+import parviz_designer from '../../images/parviz_designer.jpg'
+import tavhi from '../../images/tavhi.jpg'
+import sol from '../../images/sol.jpg'
+import manucgekhr from '../../images/manucgekhr.jpg'
 
 const About = () => {
   return (
@@ -23,12 +29,12 @@ const About = () => {
             title='Co-founders'  
           />
           <Block
-            img={Diractor} 
+            img={Aki_parviz} 
             position='Генеральный директор ' 
             name='Парвиз Усмонзода'
           />
           <Block
-            img={Diractor2} 
+            img={manucgekhr} 
             position='Директор по информационным технологиям ' 
             name='Манучехр Гаффорзода'
           />
@@ -37,7 +43,7 @@ const About = () => {
             title='Management'
           />
           <Block
-            img={girl}
+            img={sara}
             position='Офис менеджер'
             name='Каюмова Сарвиноз'
           />
@@ -46,12 +52,12 @@ const About = () => {
               title='Data Science'
             />
           <Block
-            img={girl2}
+            img={parviz}
             position='Инженер машинного обучения '
             name='Парвиз Исаев'
           />
           <Block
-            img={man}
+            img={tavhi}
             position='Младший инженер машинного обучения '
             name='Тавхид Ибодуллоев'
           />
@@ -60,12 +66,12 @@ const About = () => {
             title='Front-end'
             />
           <Block
-            img={girl3}
+            img={Daler}
             position='Старший разработчик'
             name='Далер Алямов'
           />
           <Block
-            img={man2}
+            img={Amin}
             position='Младший разработчик '
             name='Амин Мирзоев'
           />
@@ -74,17 +80,17 @@ const About = () => {
             title='Back-end'
           /> 
           <Block
-            img={girl4}
+            img={kama}
             position='Старший разработчик'
             name='Комрон Иброхимов '
           />
           <Block
-            img={girl2}
+            img={ikbol}
             position='Младший разработчик '
             name='Икбол Исматзода'
           />
           <Block
-            img={girl2}
+            img={amir}
             position='Младший разработчик'
             name='Амир Арифджанов'
           />
@@ -93,7 +99,7 @@ const About = () => {
             title='DevOps'
           /> 
           <Block
-            img={girl2}
+            img={jacob}
             position='Старший инженер'
             name='Яъкуб Ахмедов'
           />
@@ -102,17 +108,17 @@ const About = () => {
             title='Design'
           />
           <Block
-            img={girl2}
-            position='Петух'
+            img={sol}
+            position='Старший дизайнер'
             name='Солор Ибодуллоев'
           />
           <Block
-            img={girl2}
+            img={parviz_designer}
             position='Старший дизайнер'
             name='Парвиз Курбонов'
           />
           <Block
-            img={girl2}
+            img={Azim}
             position='Младший дизайнер'
             name='Азим Арифджанов'
           /> 

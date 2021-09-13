@@ -1,0 +1,169 @@
+import React from 'react'
+import styles from './About.module.sass'
+import Daler from '../../images/daler'
+import Aki_parviz from '../../images/Aki_parviz'
+import Amin from '../../images/Amin'
+import amir from '../../images/amir'
+import Azim from '../../images/Azim'
+import ikbol from '../../images/ikbol'
+import sara from '../../images/sara'
+import kama from '../../images/kama'
+import jacob from '../../images/jacob'
+import parviz from '../../images/parviz'
+import tavhid from '../../images/tavhid'
+import sol from '../../images/sol'
+import manucgekhr from '../../images/manucgekhr'
+
+const About = () => {
+  return (
+    <div className={styles.root}>
+      <div className={styles.title}>
+        TEAM
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.gridBlocks}>
+          <Block 
+            isType
+            title='Co-founders'  
+          />
+          <Block
+            img={Aki_parviz} 
+            position='Генеральный директор ' 
+            name='Парвиз Усмонзода'
+          />
+          <Block
+            img={manucgekhr} 
+            position='Директор по информационным технологиям ' 
+            name='Манучехр Гаффорзода'
+          />
+          <Block
+            isType
+            title='Management'
+          />
+          <Block
+            img={sara}
+            position='Офис менеджер'
+            name='Каюмова Сарвиноз'
+          />
+            <Block
+              isType
+              title='Data Science'
+            />
+          <Block
+            img={parviz}
+            position='Инженер машинного обучения '
+            name='Парвиз Исаев'
+          />
+          <Block
+            img={tavhid}
+            position='Младший инженер машинного обучения '
+            name='Тавхид Ибодуллоев'
+          />
+          <Block
+            isType
+            title='Front-end'
+            />
+          <Block
+            img={Daler}
+            position='Старший разработчик'
+            name='Далер Алямов'
+          />
+          <Block
+            img={Amin}
+            position='Младший разработчик '
+            name='Амин Мирзоев'
+          />
+          <Block
+            isType
+            title='Back-end'
+          /> 
+          <Block
+            img={kama}
+            position='Старший разработчик'
+            name='Комрон Иброхимов '
+          />
+          <Block
+            img={ikbol}
+            position='Младший разработчик '
+            name='Икбол Исматзода'
+          />
+          <Block
+            img={amir}
+            position='Младший разработчик'
+            name='Амир Арифджанов'
+          />
+          <Block
+            isType
+            title='DevOps'
+          /> 
+          <Block
+            img={jacob}
+            position='Старший инженер'
+            name='Яъкуб Ахмедов'
+          />
+          <Block
+            isType
+            title='Design'
+          />
+          <Block
+            img={sol}
+            position='Петух'
+            name='Солор Ибодуллоев'
+          />
+          <Block
+            img={pr}
+            position='Старший дизайнер'
+            name='Парвиз Курбонов'
+          />
+          <Block
+            img={girl2}
+            position='Младший дизайнер'
+            name='Азим Арифджанов'
+          /> 
+    
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+const Block = ({
+  isType=false,
+  img,
+  title,
+  position,
+  name
+}) => {
+  return (
+    <div className={styles.block}>
+      <div className={styles.item}>
+        {isType === true &&
+          <>
+            <span className={styles.bookTitle}>
+              {title}
+            </span>
+          </>
+        }
+         {isType === false &&
+          <>
+           <div className={styles.wrap}>
+              <img src={img} className={styles.img} alt="" />
+              <div className={styles.hoverBlock}>
+                <span className={styles.name}>
+                  {name}
+                </span>
+                <span className={styles.position}>
+                  {position}
+                </span>
+              </div>
+           </div>
+          </>
+        }
+      </div>  
+    </div>  
+  )
+}
+
+export default About
